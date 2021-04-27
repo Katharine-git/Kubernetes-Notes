@@ -1,0 +1,16 @@
+-- minikube start
+-- kubectl version
+-- kubectl cluster-info
+-- kubectl get nodes
+-- kubectl get services
+-- kubectl get deployment
+-- kubectl get replicaset
+-- minikube status
+-- kubectl create deployment first-deployment --image=ubuntu
+-- kubectl edit first-deployment-5c9c97d9-fvksf
+-- kubectl describe pod first-deployment
+-- kubectl get pods
+-- kubectl exec -it first-deployment-5c9c97d9-fvksf -- bin/bash  //for debugging
+-- kubectl expose deployment first-deployment --port=80 --   type=NodePort
+-- minikube addons enable dashboard  //Enable the dashboard using Minikube with the command
+-- minikube start --vm-driver=hyperkit --v=7 --alsologostderr  //start kubectl as a debug mode

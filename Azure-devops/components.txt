@@ -1,0 +1,31 @@
+AZURE DEVOPS COMPONENTS
+
+AGENT: when u build ur deployment, the systems begins one or more jobs
+An agent is installed software that runs one job at a time
+
+to build ur code or deploy ur software using azure pipelines, you need at least one agent.
+
+In Azure DevOps, we can use 2 types of agents:
+1. Microsoft-hosted agent
+2, self-hosted agent
+
+2. APPROVALS:
+approvals are a set of validations which are rqd b4 a deployment can be performed
+
+3. ARTIFACTS:
+An artifact is a collection of files or packages which are created by a build run
+
+  APP --> ARTIFACT(JAR file for example in JAVA App)  --> DEPLOYMENT
+
+4. ENVIRONMENT:(Dev, Testing, Prod)
+Place where we deploy our application. It is a collection of resources
+Example :- VM, Container Web App
+
+5.JOB: A Task that is running
+
+6. RUN: Execution of a pipeline, build or run
+
+7. STAGE: Each stage contains one/more jobs. Very imp in adding one level up of 
+validation b4 testing and then to prod
+
+8. TRIGGER: A orsetup that tells wen to run the job

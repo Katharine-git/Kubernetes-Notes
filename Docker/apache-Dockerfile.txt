@@ -1,0 +1,28 @@
+Ex 1: Dockerfile for Installing apache web server
+Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update &&\
+RUN apt-get install -y nginx
+ADD index.html /usr/share/nginx/html/index.html
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
+EXPOSE 80
+
+Index.html
+<html>
+    <head>
+        <title>UST GLOBAL</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dream Company.</h1>
+            <p>NGINX page practice</p>
+        </div>
+    </body>
+</html>
+        
+
+-->docker build -t mynginxapp .
+-->docker run -p 80:80 --name=app2 mynginxapp
+
+-->docker stop<container id>
+-->docker rm <container id>
